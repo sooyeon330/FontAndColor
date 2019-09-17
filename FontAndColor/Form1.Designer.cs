@@ -35,7 +35,10 @@
             this.colorDlg = new System.Windows.Forms.ColorDialog();
             this.rtbText = new System.Windows.Forms.RichTextBox();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsbtnFont = new System.Windows.Forms.ToolStripButton();
+            this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1.SuspendLayout();
+            this.tlsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -51,6 +54,9 @@
             // 
             // tlsMenu
             // 
+            this.tlsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbtnFont,
+            this.tsbtnColor});
             this.tlsMenu.Location = new System.Drawing.Point(0, 0);
             this.tlsMenu.Name = "tlsMenu";
             this.tlsMenu.Size = new System.Drawing.Size(308, 25);
@@ -76,6 +82,24 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(132, 17);
             this.toolStripStatusLabel1.Text = "3616채수연 - 폰트변경";
             // 
+            // tsbtnFont
+            // 
+            this.tsbtnFont.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnFont.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnFont.Image")));
+            this.tsbtnFont.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnFont.Name = "tsbtnFont";
+            this.tsbtnFont.Size = new System.Drawing.Size(23, 22);
+            this.tsbtnFont.Text = "toolStripButton1";
+            // 
+            // tsbtnColor
+            // 
+            this.tsbtnColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnColor.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnColor.Image")));
+            this.tsbtnColor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnColor.Name = "tsbtnColor";
+            this.tsbtnColor.Size = new System.Drawing.Size(23, 22);
+            this.tsbtnColor.Text = "toolStripButton1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -90,6 +114,8 @@
             this.Text = "3616채수연";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tlsMenu.ResumeLayout(false);
+            this.tlsMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,6 +129,8 @@
         private System.Windows.Forms.FontDialog fontDlg;
         private System.Windows.Forms.ColorDialog colorDlg;
         private System.Windows.Forms.RichTextBox rtbText;
+        private System.Windows.Forms.ToolStripButton tsbtnFont;
+        private System.Windows.Forms.ToolStripButton tsbtnColor;
     }
 }
 
