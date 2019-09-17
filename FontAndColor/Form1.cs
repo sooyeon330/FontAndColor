@@ -16,5 +16,10 @@ namespace FontAndColor
         {
             InitializeComponent();
         }
+
+        private void FontDialog1_Apply(object sender, EventArgs e)
+        {
+
+        }
     }
 }
